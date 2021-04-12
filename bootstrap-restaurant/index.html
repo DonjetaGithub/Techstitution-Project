@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>RESTAURANT ONLINE</title>
+    <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="themes/assets/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Ndërro navigimin</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"> Restaurant ONLINE</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Shtëpi</a></li>
+                <li><a href="about.html">Rreth Nesh</a></li>
+                <li><a href="contact.html">Kontaktoni</a></li>
+                <li><a href="#tablebooking">Rezervimi i tryezës</a></li>
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Indina <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Pijet</a></li>
+                    <li><a href="#">Fillestarët</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - PIJATAT</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">SHOQERUESIT</a></li>
+                  </ul>
+                </li>
+				
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Italian <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">PIJET</a></li>
+                    <li><a href="#">FILLESTARET</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - PIJATAT</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">SHOQERUESIT</a></li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chinese <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">PIJET</a></li>
+                    <li><a href="#">FILLESTARET</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - PIJATAT</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">SHOQERUESIT</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  
+    <div id="mainCarousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <script
+			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+			</script>
+			<script>
+			var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+			var marker;
+			function initialize()
+			{
+			var mapProp = {
+			  center:myCenter,
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			marker=new google.maps.Marker({
+			  position:myCenter,
+			 
+			  animation:google.maps.Animation.BOUNCE
+			  });
+
+			marker.setMap(map);
+
+			
+			var infowindow = new google.maps.InfoWindow({
+			  content:"Hello World!"
+			  });
+
+			google.maps.event.addListener(marker, 'click', function() {
+			  infowindow.open(map,marker);
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+			<div id="googleMap" style="height:450px;"></div>
+			  <div class="container">
+				<div class="carousel-caption">
+				  <a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Porosit Online Tani &raquo;</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="mainTitle">
+	<div class="container">
+	<h1> Restaurant ONLINE</h1>
+	<p>
+	Mirësevini në restorantin tonë, shpresoj se do të ju pëlqen ushqimi ynë
+	</div>
+	</div>
+
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="themes/assets/images/nepali-momo.png" alt="Generic placeholder image">
+          <h2>Nepalese MOMO</h2>
+          <p>Por derisa të urrej ia vlen. Edhe sallata e portës malesuada me Performancë të butë</p>
+          <p><a class="btn btn-default" href="#" role="button">&pound; 2.2 Shtoni në shportë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h2>Burger</h2>
+          <p>Detyrat e shtëpisë janë të buta, nuk ka përparësi hidhërimi, por ligësia e portretit erat, nga urrejtja per sallatë . </p>
+          <p><a class="btn btn-default" href="#" role="button">&pound;5 Shtoni në shportë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+		  <img class="img-circle" src="themes/assets/images/gorkha-special-chicken.png" alt="Lam Tikka">
+          <h2>Gurkha Chicken</h2>
+          <p>Por derisa të urrej ia vlen. Edhe sallata e portës malesuada me Performancë të butë. </p>
+          <p><a class="btn btn-default" href="#" role="button">&pound;4 Shtoni në shportë &raquo;</a></p>
+        </div>
+      </div>
+	</div>
+	
+
+	
+	
+	<div class="introSection">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="cntr">Ne po lançojmë sistemin e plotë të porosive në internet për restorantin e ushqimit dhe blerjen vetëm me normë.<br>&pound;999 </h1>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	 <div class="container marketing">
+    <h2 class="itemsTitle">Mëngjesi</h2>
+	<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-inner">
+        <div class="item active">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div><
+        <div class="col-lg-4">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pije</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Drink</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+          <div class="row">
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartët &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pije</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	</div>
+	
+	<div class="container marketing">
+    <h2 class="itemsTitle">Dreka</h2>
+	<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+  
+      <div class="carousel-inner">
+        <div class="item active">
+         <div class="row">
+        <div class="col-lg-4">
+           <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+         <img src="themes/assets/images/chicken.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">>Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks_lussy.png" alt="Generic placeholder image">
+          <h4>Pijet</h4>
+          <p><a class="btn btn-default" href="#" role="button">>Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/fish-and-chips.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pijet</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+          <div class="row">
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallatat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pijet</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+	</div>
+	
+	<div class="container marketing">
+    <h2 class="itemsTitle">Darka</h2>
+	<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="item active">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
+          <h4>pulë</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/rice.png" alt="Generic placeholder image">
+          <h4>Oriz</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pije</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+         <div class="row">
+        <div class="col-lg-4">
+          <img src="themes/assets/images/courinder.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div><
+        <div class="col-lg-4">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+          <h4>Mishrat</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pijet</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+		 
+        </div>
+        <div class="item">
+          <div class="row">
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
+          <h4>Sallata</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
+          <h4>pulë</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+          <h4>Pijet</h4>
+          <p><a class="btn btn-default" href="#" role="button">Shtoni në kartë &raquo;</a></p>
+        </div>
+      </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><
+	</div>
+	
+
+	<div class="highlightSection">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+		<div class="media">
+			<a href="menu/"><img src="themes/assets/images/nepali-momo.png" alt="nepali-momo"> </a>
+			<h3 class="media-heading text-primary-theme">NEPALESE LAMB MOMO</h3>
+			<p>Dumplings të avulluara të mbushura me mish të grirë paksa me erëza të servuara me salcë speciale.</p>
+		</div>
+		</div>
+		<div class="col-lg-4">
+		<div class="media"><a href="menu/"><img src="themes/assets/images/gorkha-special-chicken.png" alt="GURKHA SPECIAL CHICKEN"> </a>						
+		<h3 class="media-heading text-danger-theme">GURKHA SPECIAL CHICKEN</h3>
+		<p>Pule pa kocka e marinuar në mustardë, djegës të tymosur, bimë dhe erëza të gatuara ngadalë në tandoor. </p>
+		
+		</div>
+		</div>
+		<div class="col-lg-4">
+		<div class="media">
+		<a href="menu/"><img src="themes/assets/images/lam-tikka.png" alt="Lam Tikka"> </a>
+		<h3 class="media-heading">LAMB TIKKA SPECIAL</h3>
+		<p>Copa të buta qengji të përziera me erëzat tona dhe të gatuara butësisht në furrë balte. </p>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	      
+
+	
+	<div class="introSection">
+		<div class="container">
+		<div class="row">
+		<div class="col-lg-5">
+		<h3>Mirësevini në restorant</h3>
+		<p>
+		Ushqimi eshte nje nder faktoret me te rendesishem per jeten e njeriut.Ushqimet ndihmojne ne lojë e organizmave.Ato po ashtu bashk me ujin dhe ajrin komploton kushtet per jetese. Ne kemi ushqime te ndryshme, por me te shendetshmet jane pemet dhe perimet, pra ato qe vijne te gatshme nga natyra, kurse ushqimet te cilat jane me te demshme per organizmin tone jane: ushqimet e shpejta, embelsirat, etj.Per te si nje organizm te shendoshe duhet qe te hajme sa me shume peme dhe perime dhe sa me pak ushqime te shpejta dhe embelsira.Nese ne pakesojme perdorimin e pemeve dhe perimeve dhe hame me shume ushqime te shpejta dhe embelsira tek ne mund te shfaqen semundje te ndryshme te cilat mund te na lene pasoja fatale..
+		</p>
+		</div>
+		
+		<div class="col-lg-4">
+		<h3>Welcome to restaurant</h3>
+		<p>
+		food is one of the most important factors for human life. Foods help in the development of organisms. They also together with water and air meet the living conditions. We have different foods, but the healthiest are fruits and vegetables, so they that come ready from nature, while the foods that are most harmful to our body are: fast food, sweets, etc. To have a healthy body we need to eat as many fruits and vegetables and as few foods fast and sweets. If we reduce the use of fruits and vegetables and eat more fast foods and sweets we can develop various diseases which can have fatal consequences. <br><br>
+		
+		</p>
+		
+		</div>
+		
+		<div class="col-lg-3">
+		<h3>Restorana hoş geldiniz</h3>
+		<p>
+		Yemek, insan yaşamı için en önemli faktörlerden biridir.Gıdalar organizmaların gelişmesine yardımcı olurlar.Ayrıca su ve hava ile birlikte yaşam koşullarını karşılarlar.Farklı yiyeceklerimiz var ama en sağlıklıları meyve ve sebzeler, yani hazır gelenler doğadan gelen ve vücudumuza en zararlı yiyecekler şunlardır: fast food, tatlılar, vb. Sağlıklı bir vücuda sahip olmak için, mümkün olduğunca çok meyve ve sebze ve hızlı ve tatlı yiyecekler kadar az yemeliyiz. meyveler ve sebzeler ve daha hızlı yiyecekler ve tatlılar yiyip, ölümcül sonuçlar doğurabilecek çeşitli hastalıklar geliştirebiliriz. 
+		
+		</p>
+		
+		</div>
+		
+		</div>
+		</div>
+	</div>
+
+
+   <div class="container marketing">
+   <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+     
+      <div class="carousel-inner">
+      <div class="item active">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Peshk dhe patate të skuqura <span class="text-muted">Eshtë shumë shumë e shijshme</span></h2>
+          <p class="lead">Paraqitur Sipas ullamcorper nulla auctor Fringilla nuk plotësojnë kërkesat.Paraqisni një komoditet të shkëlqyeshëm të disponueshëm ose drejtues termik.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="themes/assets/images/fish-and-chips.png" alt="Fish and Chips">
+        </div>
+      </div>
+      </div>
+
+      
+	<div class="item">
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Oh yes, very nice Burger. <span class="text-muted">Tasty</span></h2>
+          <p class="lead">Filed under ullamcorper nulla auctor Fringilla do not meet the requirements. Provide excellent disposable comfort or thermal steering</p>
+        </div>
+      </div>
+      </div>
+
+
+	<div class="item">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Kendin dene <span class="text-muted">Lezzetli</span></h2>
+          <p class="lead">Mükemmel tek kullanımlık konfor veya termal yönlendirme sağlayın.</p>
+        </div>
+        <div class="col-md-5">
+		  <img class="img-circle" src="themes/assets/images/drinks.png" alt="Generic placeholder image">
+        </div>
+      </div>
+      </div>
+	   </div>
+    </div>  
+    </div>
+      <footer>
+		<div class="container">
+        <p class="pull-right"><a href="#">Kthehu në fillim</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privatësia</a> &middot; <a href="#">Kushtet</a></p>
+		</div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="themes/dist/js/bootstrap.min.js"></script>
+    <script src="themes/assets/js/holder.js"></script>
+  </body>
+</html>
